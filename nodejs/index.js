@@ -8,6 +8,10 @@ function challenge1(limit)
         "Find the sum of all the multiples of 3 or 5 below " + limit + "\n"
     );
 
+    console.log("solution:");
+    console.log("--------");
+
+
     const start=1;
     let result = 0;
     const multiples = [3,5];
@@ -76,6 +80,11 @@ function challenge2(maxValue)
 }
 
 
+funciton challenge3(input)
+{
+
+}
+
 switch (arguments[0]) {
     
     case '1':
@@ -85,6 +94,10 @@ switch (arguments[0]) {
     case "2":
         challenge2(arguments[1]);
         break;    
+
+    case "3":
+        challenge3(arguments[1]);
+        break;
 
     default:
         console.log("Please provide valid input");
