@@ -39,4 +39,12 @@ Run the below in commandline
 
 Ex:  
 `node index.js 5 10`  
-Smallest Positive number that is evenly divisble by all numbers from 1 to 10 is 2520    
+Smallest Positive number that is evenly divisble by all numbers from 1 to 10 is 2520  
+
+**Challenge #6**  
+Run the below in commandline  
+`node index.js [Challenge No] [input number]`  
+
+Ex:  
+`node index.js 6 10`  
+The difference between the sum of the squares of the first 10 natural numbers and the square of the sum is 2640.  
