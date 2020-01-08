@@ -38,5 +38,5 @@ Run the below in commandline
 `node index.js [Challenge No] [input number]`  
 
 Ex:  
-`node index.js 5 2`  
-Largest palindrome made from the product of two 2 digit number is '9009'  
+`node index.js 5 10`  
+Smallest Positive number that is evenly divisble by all numbers from 1 to 10 is 2520    
