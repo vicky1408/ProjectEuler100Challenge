@@ -202,17 +202,15 @@ function challenge6(intNumber) {
     console.log("solution:");
     console.log("--------");
 
-    let sumOfNumbers = 0;
+    let sumOfNumbers = ((intNumber + 1) * (intNumber))/2;
     let sumOfSquareOfNumbers = 0;
-    let result = 0;
 
     for(let i = 1; i <= intNumber; i++)
     {
-        sumOfNumbers += i;
         sumOfSquareOfNumbers += Math.pow(i,2);
     }
     
-    result = Math.pow(sumOfNumbers, 2) - sumOfSquareOfNumbers;
+    const result = Math.pow(sumOfNumbers, 2) - sumOfSquareOfNumbers;
 
     console.log(result);
 }
@@ -244,7 +242,6 @@ switch (arguments[0]) {
         challenge6(arguments[1]);
         break;    
     
-
     default:
         console.log("Please provide valid input");
         break;
