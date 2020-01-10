@@ -186,7 +186,7 @@ function challenge5(intNumber) {
 }
 
 
-function challenge6(intNumber) {
+function challenge6(n) {
     console.log(
     "The sum of the squares of the first ten natural numbers is, \n" +
     "1(square) + 2(square) + ... + 10(square) = 385 \n \n" +
@@ -196,14 +196,14 @@ function challenge6(intNumber) {
 
     "Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640. \n" +
 
-    "Find the difference between the sum of the squares of the first " + intNumber + " natural numbers and the square of the sum. \n"
+    "Find the difference between the sum of the squares of the first " + n + " natural numbers and the square of the sum. \n"
     );
 
     console.log("solution:");
     console.log("--------");
 
-    // Does not work on Node JS - Operator Precedence not recognized.
-    let sumOfNumbers = ((intNumber + 1) * (intNumber))/2;
+    intNumber = parseInt(n);
+    let sumOfNumbers = (intNumber * (intNumber + 1))/2;
     let sumOfSquareOfNumbers = 0;
 
     for(let i = 1; i <= intNumber; i++)

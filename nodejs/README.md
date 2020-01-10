@@ -48,5 +48,3 @@ Run the below in commandline
 Ex:  
 `node index.js 6 10`  
 The difference between the sum of the squares of the first 10 natural numbers and the square of the sum is 2640.  
-
-(For Some reasons, Operator Precedence in Challenge #6 not working as expected. Investigating on the issue.)
