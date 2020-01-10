@@ -217,6 +217,45 @@ function challenge6(n) {
 }
 
 
+function challenge7(n) {
+    console.log(
+        "By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. \n" +
+        "What is the 10 001st prime number?"
+    );
+
+    console.log("solution:");
+    console.log("--------");
+
+    let arrPrime = [];
+    let dividend = 2;
+    let divisor = 1;
+
+    while(arrPrime.length === n)
+    {
+        if(dividend % divisor === 0 && divisor <= dividend)
+        {
+
+            divisor++;
+        }
+        else
+        {
+            divisor = 1;
+            dividend++;
+        }
+        arrPrime.push();
+    }    
+
+    for(let i = 1; i <= intNumber; i++)
+    {
+        sumOfSquareOfNumbers += Math.pow(i,2);
+    }
+    
+    const result = Math.pow(sumOfNumbers, 2) - sumOfSquareOfNumbers;
+
+    console.log(result);
+}
+
+
 switch (arguments[0]) {
 
     case '1':
@@ -242,7 +281,11 @@ switch (arguments[0]) {
     case "6":
         challenge6(arguments[1]);
         break;    
-    
+
+    case "7":
+        challenge7(arguments[1]);
+        break;
+        
     default:
         console.log("Please provide valid input");
         break;
