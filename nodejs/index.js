@@ -202,6 +202,7 @@ function challenge6(intNumber) {
     console.log("solution:");
     console.log("--------");
 
+    // Does not work on Node JS - Operator Precedence not recognized.
     let sumOfNumbers = ((intNumber + 1) * (intNumber))/2;
     let sumOfSquareOfNumbers = 0;
 
