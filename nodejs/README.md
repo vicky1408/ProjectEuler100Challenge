@@ -62,4 +62,4 @@ Run the below in commandline
 `node index.js [Challenge No] [input number]`  
 
 Ex:  
-`node index.js 7 6`  
+`node index.js 8 4`  
