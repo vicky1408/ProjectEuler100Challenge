@@ -377,6 +377,43 @@ while(doLoop)
 console.log(n);
 }
 
+function challenge10(n)
+{
+    n = parseInt(n);
+
+    let dividend = n-1;
+    let divisor = 2;
+    let isPrime = true;
+    let result = 0;
+    //let arrPrime = [];
+
+    while(dividend > 2)
+    {
+        for(let i=divisor; i< dividend; i++)
+        {
+            if(dividend % i === 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if(isPrime)
+        {
+          // console.log(dividend);
+          arrPrime.push(dividend);
+            result += dividend;
+        }
+
+
+        isPrime = true;
+        dividend--;
+        divisor = 2;
+    }
+
+    console.log(result);
+}
+
 switch (arguments[0]) {
 
     case '1':
@@ -413,6 +450,10 @@ switch (arguments[0]) {
 
     case "9":
         challenge9(arguments[1]);
+        break;
+
+    case "10":
+        challenge10(arguments[1])
         break;
             
     default:
