@@ -384,7 +384,7 @@ function challenge10(n)
     let dividend = n-1;
     let divisor = 2;
     let isPrime = true;
-    let result = 0;
+    let result = 2;
     //let arrPrime = [];
 
     while(dividend > 2)
@@ -401,7 +401,7 @@ function challenge10(n)
         if(isPrime)
         {
           // console.log(dividend);
-          arrPrime.push(dividend);
+        //   arrPrime.push(dividend);
             result += dividend;
         }
 
