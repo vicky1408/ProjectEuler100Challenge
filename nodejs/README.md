@@ -63,3 +63,10 @@ Run the below in commandline
 
 Ex:  
 `node index.js 8 4`  
+
+**Challenge #9**  
+Run the below in commandline  
+`node index.js [Challenge No] [input number]`  
+
+Ex:  
+`node index.js 8 4`  
