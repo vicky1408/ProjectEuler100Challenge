@@ -375,43 +375,40 @@ while(doLoop)
     c++;
 }
 console.log(n);
-}
 
+}
 function challenge10(n)
 {
-    n = parseInt(n);
+    console.time('Execution Time: ');
+    n = parseInt(n)-1;
+    let startAt = 2
+    let arr1 = [...Array(n-1).keys()].map(i => i + startAt);
+    let SqRoot = Math.floor(Math.sqrt(n));
+    let primeIndex = 0;
+    let primeFactor = arr1[primeIndex];
 
-    let dividend = n-1;
-    let divisor = 2;
-    let isPrime = true;
-    let result = 2;
-    //let arrPrime = [];
-
-    while(dividend > 2)
+    while(SqRoot >= primeFactor)
     {
-        for(let i=divisor; i< dividend; i++)
-        {
-            if(dividend % i === 0)
+      arr1 = arr1.filter(function(value, index) {
+            if(value > primeFactor)
             {
-                isPrime = false;
-                break;
+              return value % primeFactor;
             }
-        }
-
-        if(isPrime)
-        {
-          // console.log(dividend);
-        //   arrPrime.push(dividend);
-            result += dividend;
-        }
-
-
-        isPrime = true;
-        dividend--;
-        divisor = 2;
+            else
+            {
+              return true;
+            }
+          });
+      primeIndex++;
+      primeFactor = arr1[primeIndex];    
     }
 
+    const result = arr1.reduce(function(accumalator, currentValue) {
+      return accumalator + currentValue;
+    });
+
     console.log(result);
+    console.timeEnd('Execution Time: ');
 }
 
 switch (arguments[0]) {
