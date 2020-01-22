@@ -76,7 +76,7 @@ switch (arguments[0]) {
 
     case "11":
         console.time('Execution Time: ');
-        challenge11.main(arguments[1]);
+        challenge11.main();
         console.timeEnd('Execution Time: ');
         break;
             
