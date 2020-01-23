@@ -12,6 +12,7 @@ let challenge9 = require('./challenge9');
 let challenge10 = require('./challenge10');
 let challenge11 = require('./challenge11');
 let challenge12 = require('./challenge12');
+let challenge13 = require('./challenge13');
 
 switch (arguments[0]) {
 
@@ -84,6 +85,12 @@ switch (arguments[0]) {
     case "12":
         console.time('Execution Time: ');
         challenge12.main(arguments[1]);
+        console.timeEnd('Execution Time: ');
+        break;
+
+    case "13":
+        console.time('Execution Time: ');
+        challenge13.main(arguments[1]);
         console.timeEnd('Execution Time: ');
         break;
         
