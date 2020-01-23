@@ -11,6 +11,7 @@ let challenge8 = require('./challenge8');
 let challenge9 = require('./challenge9');
 let challenge10 = require('./challenge10');
 let challenge11 = require('./challenge11');
+let challenge12 = require('./challenge12');
 
 switch (arguments[0]) {
 
@@ -80,6 +81,13 @@ switch (arguments[0]) {
         console.timeEnd('Execution Time: ');
         break;
             
+    
+    case "12":
+        console.time('Execution Time: ');
+        challenge12.main();
+        console.timeEnd('Execution Time: ');
+        break;
+        
     default:
         console.log("Please provide valid input");
         break;
