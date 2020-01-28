@@ -13,7 +13,7 @@ let challenge10 = require('./challenge10');
 let challenge11 = require('./challenge11');
 let challenge12 = require('./challenge12');
 let challenge13 = require('./challenge13');
-// let challenge14 = require('./challenge14');
+let challenge14 = require('./challenge14');
 let challenge15 = require('./challenge15');
 let challenge16 = require('./challenge16');
 
